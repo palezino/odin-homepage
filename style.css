@@ -22,6 +22,7 @@ header {
 
 .photo-container {
     color: whitesmoke;
+    box-shadow: 0 5px 10px #6B6C6C6B;
 
     display: flex;
     flex-direction: column;
@@ -41,12 +42,13 @@ header {
     position: absolute;
     bottom: 0;
 
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
 }
 
 .about-me {
     background-color: #F2CF8D;
+    box-shadow: 5px 5px 10px #6B6C6C6B;
     padding: 1rem 1.3rem;
 
     font-size: 1.3rem;
@@ -62,6 +64,22 @@ h1 {
 
 main {
     background-color: #F2CF8D;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.project {
+    border: solid #1B3540;
+    border-radius: 10px;
+
+    padding: 1.3em;
 }
 
 footer {
