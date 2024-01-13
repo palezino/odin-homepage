@@ -130,3 +130,13 @@ footer {
 .contact-info h1 {
     margin-bottom: 0;
 }
+
+.contact-email, .contact-number {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.icon-phone, .icon-email {
+    max-width: 2rem;
+}
