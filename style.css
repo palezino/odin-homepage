@@ -21,7 +21,8 @@ header {
 }
 
 .photo-container {
-    color: whitesmoke;
+    color: white;
+    /* text-shadow: #1B3540 2px 2px 15px; */
     box-shadow: 0 5px 10px #6B6C6C6B;
 
     display: flex;
@@ -44,6 +45,7 @@ header {
 
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
+    text-shadow: #1B3540 2px 0px 10px;
 }
 
 .about-me {
@@ -139,4 +141,13 @@ footer {
 
 .icon-phone, .icon-email {
     max-width: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+    
 }
