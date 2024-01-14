@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #F2B705;
-    padding: 2em 1.5em;
+    padding: 4em 3em;
     margin: 0 auto;
     max-width: 80%;
 
@@ -22,7 +22,6 @@ header {
 
 .photo-container {
     color: white;
-    /* text-shadow: #1B3540 2px 2px 15px; */
     box-shadow: 0 5px 10px #6B6C6C6B;
 
     display: flex;
@@ -31,19 +30,17 @@ header {
     width: 100%;
 
     position: relative;
-    /* background-image: url("./images/working-man.jpg"); */
 }
 
 .op-photo {
     max-width: 100%;
-    /* object-fit: cover; */
 }
 
 .op-name {
     position: absolute;
     bottom: 0;
 
-    font-size: 3rem;
+    font-size: 2.8em;
     font-family: 'Playfair Display', serif;
     text-shadow: #1B3540 2px 0px 10px;
 }
@@ -54,6 +51,10 @@ header {
     padding: 1rem 1.3rem;
 
     font-size: 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h1, h2 {
@@ -61,7 +62,8 @@ h1, h2 {
 }
 
 .icons {
-    float: right;
+    align-self: flex-end;
+    /* float: right; */
 }
 
 main {
@@ -148,6 +150,77 @@ footer {
     gap: 1rem;
 }
 
-@media (max-width: 1000px) {
-    
+@media (max-width: 1473px) {
+ .op-name {
+    font-size: 2.3em;
+ }
+}
+/* trying positioning */
+/* @media (max-width: 1330px) {
+    header {
+        position: relative;
+    }
+    .photo-container {
+        width: 40%;
+        position:absolute;
+        top: 2em;
+        left: 1.5em;
+    }
+    .about-me {
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        right: 1.5rem;
+    }
+} */
+/* trying grid */
+/* @media (max-width: 1330px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 2fr .5fr;
+    }
+    .photo-container {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .about-me {
+        grid-column: 2 / -1;
+        grid-row: 1 / 3;
+        padding: 3rem 1.3rem;
+        margin-top: 5rem;
+    }
+} */
+/* trying float */
+@media (max-width: 1330px) {
+    header {
+        display: block;
+    }
+    .photo-container {
+        margin-right: 1.5em;
+        /* margin-bottom: 1em; */
+        width: 35%;
+        float: left;
+    }
+    .about-me {
+        display: block;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        margin-top: 7rem;
+        margin-left: 2rem;
+    }
+    .op-name {
+        top: .3em;
+        right: -7em;
+        font-size: 3em;
+    }
+    .icons {
+        float: right;
+    }
+}
+
+@media (max-width: 1070px) {
+    .about-me {
+        padding-top: 1rem;
+    }
 }
