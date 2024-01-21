@@ -150,6 +150,10 @@ footer {
     gap: 1rem;
 }
 
+.op-photo-footer {
+    max-width: 100%;
+}
+
 @media (max-width: 1473px) {
  .op-name {
     font-size: 2.3em;
@@ -282,4 +286,24 @@ footer {
     .icons {
         float: right;
     }
+}
+
+@media (max-width: 580px) {
+    footer {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .contact-info {
+        gap: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .contact-info h1 {
+        align-self: center;
+    }
+
+    .op-photo-footer {
+        width: 100%;
+    }
+
 }
