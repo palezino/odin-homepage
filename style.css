@@ -201,7 +201,6 @@ footer {
     }
     .photo-container {
         margin-right: 1.5em;
-        /* margin-bottom: 1em; */
         width: 35%;
         float: left;
     }
@@ -223,6 +222,10 @@ footer {
 }
 
 @media (max-width: 1070px) {
+    .photo-container {
+        margin-right: 1.5em;
+        width: 40%;
+    }
     .about-me {
         padding-top: 1rem;
     }
@@ -241,5 +244,37 @@ footer {
 @media (max-width: 780px) {
     header, main, footer {
         max-width: 100%;
+    }
+    .contact-info {
+        font-size: 1.1rem;
+     }
+}
+
+@media(max-width: 665px) {
+    header {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-container {
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+
+    }
+    .about-me {
+        display: block;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .op-name {
+        top: 35.5rem;
+        right: 1rem;
+        font-size: 4.5rem;
+    }
+    .icons {
+        float: right;
     }
 }
