@@ -255,24 +255,29 @@ footer {
         /* display: block; */
         display: flex;
         flex-direction: column;
+        padding: 4em 0;
     }
     .photo-container {
-        margin: 0 auto;
-        width: 100%;
+        margin: 0 3rem;
+        width: 85%;
         float: none;
 
+        position: static;
     }
     .about-me {
-        display: block;
-        padding-top: 3rem;
-        padding-bottom: 4rem;
-        margin-top: 1rem;
-        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        padding: 2rem 4rem;
+        margin: 4rem auto;
+        width: 100%;
     }
     .op-name {
-        top: 35.5rem;
-        right: 1rem;
-        font-size: 4.5rem;
+        position: static;
+        font-size: 4rem;
+        margin-top: -11rem;
+        margin-left: 1rem;
     }
     .icons {
         float: right;
