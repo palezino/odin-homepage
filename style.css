@@ -75,7 +75,7 @@ main {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
 }
 
@@ -304,6 +304,53 @@ footer {
 
     .op-photo-footer {
         width: 100%;
+    }
+
+}
+@media (max-width: 460px) {
+    header {
+        padding-top: 0;
+    }
+    .photo-container {
+        width: 100%;
+    }
+
+    footer {
+      padding: 0;  
+    }
+
+    .contact-info {
+        padding: 2em 1.5em;
+    }
+
+    .footer-photo {
+        width: 100%;
+    }
+    .op-photo-footer {
+        vertical-align: middle;
+    }
+
+}
+@media (max-width: 420px) {
+    main {
+        padding: 2em 0;
+    }
+    main h1 {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .contact-info {
+        padding: 1em 1.5em;
+        font-size: 1.2rem;
+    }
+    .about-me {
+        padding: 1rem 1.5rem;
+    }
+
+}
+@media (max-width: 340px) {
+    .icon-email {
+        display: none;
     }
 
 }
