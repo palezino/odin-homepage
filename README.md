@@ -1,5 +1,7 @@
 # odin-homepage
 
+Homepage web-site that was made as a part of The Odin Project curriculum. The images were taken from pexels.com and pixabay.com all the links are provided below. The main photo is not mine and the whole information is made up.
+
 Photo by ELEVATE: https://www.pexels.com/photo/person-using-forklift-1267338/
 Photo by ELEVATE: https://www.pexels.com/photo/person-driving-yellow-forklift-carrying-metal-barrels-1267337/
 Photo by Pixabay: https://www.pexels.com/photo/wine-tank-room-434311/
